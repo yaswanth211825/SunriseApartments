@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.sunriseinteriorsmarkapur.in/</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.sunriseinteriorsmarkapur.in/images/home3-cumbum/living-room-1.jpg</image:loc>
+      <image:title>Living room interior design by Sunrise Interiors Markapur</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sunriseinteriorsmarkapur.in/images/logo.png</image:loc>
+      <image:title>Sunrise Interiors Markapur Logo</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.sunriseinteriorsmarkapur.in/interiors.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sunriseinteriorsmarkapur.in/images/home3-cumbum/living-room-2.jpg</image:loc>
+      <image:title>Interior design services by Sunrise Interiors</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.sunriseinteriorsmarkapur.in/projects.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sunriseinteriorsmarkapur.in/images/home3-cumbum/entry-1.jpg</image:loc>
+      <image:title>Home 3 Cumbum entry — Sunrise Interiors project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sunriseinteriorsmarkapur.in/images/home4-giddalur/living-room-1.jpg</image:loc>
+      <image:title>Home 4 Giddalur living room — Sunrise Interiors project</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.sunriseinteriorsmarkapur.in/services.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sunriseinteriorsmarkapur.in/contact.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
