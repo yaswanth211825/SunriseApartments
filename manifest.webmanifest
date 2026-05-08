@@ -1,0 +1,47 @@
+{
+  "name": "Sunrise Interiors Markapur",
+  "short_name": "Sunrise Interiors",
+  "description": "Premium home interior designers based in Markapur, serving all of Andhra Pradesh & Telangana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F0E8",
+  "theme_color": "#1C1C1C",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Our Projects",
+      "short_name": "Projects",
+      "description": "View our interior design project portfolio",
+      "url": "/projects.html",
+      "icons": [{"src": "images/logo.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Services & Pricing",
+      "short_name": "Services",
+      "description": "Interior design services and transparent pricing",
+      "url": "/services.html",
+      "icons": [{"src": "images/logo.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Book a free home visit or WhatsApp us",
+      "url": "/contact.html",
+      "icons": [{"src": "images/logo.png", "sizes": "192x192"}]
+    }
+  ]
+}

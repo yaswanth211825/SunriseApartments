@@ -1309,4 +1309,23 @@ textarea.f-input { resize: vertical; min-height: 120px; }
 }
 @media (min-width: 1024px) { .float-yt { display: flex; } }
 .float-yt:hover { transform: scale(1.1); }
+
+/* ---- Breadcrumb Nav ---- */
+.breadcrumb-nav {
+  background: var(--color-cream);
+  border-bottom: 1px solid rgba(201,169,110,0.18);
+  padding: 12px 24px;
+}
+.breadcrumb-list {
+  display: flex; align-items: center; gap: 8px;
+  list-style: none; max-width: var(--max-width); margin: 0 auto;
+  font-family: var(--font-mono); font-size: 12px; color: var(--color-stone);
+  flex-wrap: wrap;
+}
+.breadcrumb-list a {
+  color: var(--color-brass-dark); text-decoration: none;
+  transition: color 0.2s;
+}
+.breadcrumb-list a:hover { color: var(--color-obsidian); }
+.breadcrumb-list [aria-current="page"] { color: var(--color-obsidian); }
 .float-yt .float-tooltip { right: 62px; }

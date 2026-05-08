@@ -27,8 +27,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -62,6 +64,65 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sunriseinteriorsmarkapur.in/"}]
+  }
+  </script>
+
+  <!-- WebSite schema — enables Google Sitelinks Searchbox and anchors sitelinks navigation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sunrise Interiors Markapur",
+    "url": "https://www.sunriseinteriorsmarkapur.in",
+    "description": "Premium home interior designers based in Markapur, serving all of Andhra Pradesh & Telangana.",
+    "inLanguage": "en-IN",
+    "publisher": {
+      "@type": "InteriorDesigner",
+      "name": "Sunrise Interiors Markapur",
+      "url": "https://www.sunriseinteriorsmarkapur.in",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.sunriseinteriorsmarkapur.in/images/logo.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.sunriseinteriorsmarkapur.in/projects.html?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- SiteNavigationElement — tells Google which links are primary sitelinks -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SiteLinksSearchBox",
+    "url": "https://www.sunriseinteriorsmarkapur.in",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.sunriseinteriorsmarkapur.in/projects.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- ItemList — key pages for Google sitelinks display -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Sunrise Interiors — Key Pages",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Our Projects","url":"https://www.sunriseinteriorsmarkapur.in/projects.html"},
+      {"@type":"ListItem","position":2,"name":"Ongole House — 2 BHK Renovation","url":"https://www.sunriseinteriorsmarkapur.in/ongole-house.html"},
+      {"@type":"ListItem","position":3,"name":"Interiors Showcase","url":"https://www.sunriseinteriorsmarkapur.in/interiors.html"},
+      {"@type":"ListItem","position":4,"name":"Services & Pricing","url":"https://www.sunriseinteriorsmarkapur.in/services.html"},
+      {"@type":"ListItem","position":5,"name":"Contact Us — Free Home Visit","url":"https://www.sunriseinteriorsmarkapur.in/contact.html"}
+    ]
   }
   </script>
 
@@ -176,8 +237,8 @@
               loading="lazy" decoding="async">
           </div>
           <div class="journey-img" data-room="kitchen">
-            <img src="images/home3-cumbum/kitchen-1.jpg"
-              alt="Modular kitchen design by Sunrise Interiors Markapur"
+            <img src="images/projects/cumbum-house/modular-kitchen-with-island-design.webp"
+              alt="Modular kitchen with island design — full home interior Cumbum by Sunrise Interiors Markapur"
               loading="lazy" decoding="async">
           </div>
           <div class="journey-img" data-room="bedroom">
@@ -186,13 +247,13 @@
               loading="lazy" decoding="async">
           </div>
           <div class="journey-img" data-room="pooja">
-            <img src="images/home3-cumbum/pooja-IMG_8380.jpg"
-              alt="Pooja room design by Sunrise Interiors Markapur"
+            <img src="images/home3-cumbum/pooja-room-interior-cumbum.webp"
+              alt="Traditional pooja room with Ganesha backlit mandir — full home interior Cumbum by Sunrise Interiors Markapur"
               loading="lazy" decoding="async">
           </div>
           <div class="journey-img" data-room="bathroom">
-            <img src="images/home3-cumbum/bathroom-1.jpg"
-              alt="Bathroom design by Sunrise Interiors Markapur"
+            <img src="images/projects/cumbum-house/marble-bathroom-interior-with-bathtub.webp"
+              alt="Marble bathroom interior with bathtub — premium bathroom design by Sunrise Interiors Markapur"
               loading="lazy" decoding="async">
           </div>
         </div>
@@ -218,8 +279,8 @@
         </div>
 
         <div class="journey-step" data-step="2" data-room="kitchen">
-          <img src="images/home3-cumbum/kitchen-1.jpg"
-            alt="Modular kitchen by Sunrise Interiors"
+          <img src="images/projects/cumbum-house/modular-kitchen-with-island-design.webp"
+            alt="Modular kitchen with island design — full home interior Cumbum by Sunrise Interiors"
             class="journey-step-img" loading="lazy" decoding="async">
           <span class="journey-step-label">02 — Modular Kitchen</span>
           <h3 class="journey-step-title">Built for<br>Serious Indian Cooking</h3>
@@ -248,8 +309,8 @@
         </div>
 
         <div class="journey-step" data-step="4" data-room="pooja">
-          <img src="images/home3-cumbum/pooja-IMG_8380.jpg"
-            alt="Pooja room by Sunrise Interiors"
+          <img src="images/home3-cumbum/pooja-room-interior-cumbum.webp"
+            alt="Traditional pooja room with Ganesha backlit mandir — Cumbum home interior by Sunrise Interiors"
             class="journey-step-img" loading="lazy" decoding="async">
           <span class="journey-step-label">04 — Pooja Room</span>
           <h3 class="journey-step-title">Sacred Space,<br>Crafted with Devotion</h3>
@@ -263,8 +324,8 @@
         </div>
 
         <div class="journey-step" data-step="5" data-room="bathroom">
-          <img src="images/home3-cumbum/bathroom-1.jpg"
-            alt="Bathroom design by Sunrise Interiors"
+          <img src="images/projects/cumbum-house/marble-bathroom-interior-with-bathtub.webp"
+            alt="Marble bathroom interior with bathtub — premium bathroom design by Sunrise Interiors"
             class="journey-step-img" loading="lazy" decoding="async">
           <span class="journey-step-label">05 — Bathroom</span>
           <h3 class="journey-step-title">Clean. Safe.<br>Quietly Luxurious</h3>
@@ -297,8 +358,8 @@
             alt="Home entry design by Sunrise Interiors, Cumbum" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Entry · Cumbum</span>
-            <div class="gallery-card-title">The Cumbum Home — Entry</div>
-            <div class="gallery-card-loc">Home 3 · Cumbum, Andhra Pradesh</div>
+            <div class="gallery-card-title">3 BHK Full Home — Entry, Cumbum</div>
+            <div class="gallery-card-loc">3 BHK Full Home Interior · Cumbum, AP</div>
           </div>
         </div>
 
@@ -307,68 +368,68 @@
             alt="Living room interior design Cumbum by Sunrise Interiors" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Living Room · Cumbum</span>
-            <div class="gallery-card-title">The Cumbum Home — Living</div>
-            <div class="gallery-card-loc">Home 3 · Cumbum, Andhra Pradesh</div>
+            <div class="gallery-card-title">3 BHK Full Home — Living Room, Cumbum</div>
+            <div class="gallery-card-loc">3 BHK Full Home Interior · Cumbum, AP</div>
           </div>
         </div>
 
         <div class="gallery-card fade-in d2" role="listitem">
-          <img class="gallery-card-img" src="images/home3-cumbum/kitchen-2.jpg"
-            alt="Modular kitchen design by Sunrise Interiors" loading="lazy" decoding="async">
+          <img class="gallery-card-img" src="images/projects/cumbum-house/modular-kitchen-with-island-design.webp"
+            alt="Modular kitchen with island design — 3 BHK full home interior Cumbum by Sunrise Interiors" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Kitchen · Cumbum</span>
-            <div class="gallery-card-title">The Cumbum Home — Kitchen</div>
-            <div class="gallery-card-loc">Home 3 · Cumbum, Andhra Pradesh</div>
+            <div class="gallery-card-title">3 BHK Full Home — Kitchen, Cumbum</div>
+            <div class="gallery-card-loc">3 BHK Full Home Interior · Cumbum, AP</div>
           </div>
         </div>
 
         <div class="gallery-card fade-in" role="listitem">
-          <img class="gallery-card-img" src="images/home3-cumbum/bedroom-2.jpg"
-            alt="Bedroom interior design by Sunrise Interiors" loading="lazy" decoding="async">
+          <img class="gallery-card-img" src="images/projects/cumbum-house/modern-bedroom-wardrobe-sliding-door.webp"
+            alt="Modern bedroom with sliding wardrobe door — 3 BHK full home interior Cumbum by Sunrise Interiors" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Bedroom · Cumbum</span>
-            <div class="gallery-card-title">The Cumbum Home — Bedroom</div>
-            <div class="gallery-card-loc">Home 3 · Cumbum, Andhra Pradesh</div>
+            <div class="gallery-card-title">3 BHK Full Home — Bedroom, Cumbum</div>
+            <div class="gallery-card-loc">3 BHK Full Home Interior · Cumbum, AP</div>
           </div>
         </div>
 
         <div class="gallery-card fade-in d1" role="listitem">
-          <img class="gallery-card-img" src="images/home4-giddalur/living-room-1.jpg"
-            alt="Living room interior design Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
+          <img class="gallery-card-img" src="images/home4-giddalur/living-room-ground-floor-best.webp"
+            alt="Living room interior design — full home renovation Giddalur Andhra Pradesh by Sunrise Interiors" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Living Room · Giddalur</span>
-            <div class="gallery-card-title">The Giddalur Home — Ground Floor</div>
-            <div class="gallery-card-loc">Home 4 · Giddalur, Andhra Pradesh</div>
+            <div class="gallery-card-title">Full Home Renovation — Living Room, Giddalur</div>
+            <div class="gallery-card-loc">Full Home Renovation · Giddalur, AP</div>
           </div>
         </div>
 
         <div class="gallery-card fade-in d2" role="listitem">
           <img class="gallery-card-img" src="images/home4-giddalur/kitchen-1.jpg"
-            alt="Kitchen design Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
+            alt="Modular kitchen interior design — full home renovation Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Kitchen · Giddalur</span>
-            <div class="gallery-card-title">The Giddalur Home — Kitchen</div>
-            <div class="gallery-card-loc">Home 4 · Giddalur, Andhra Pradesh</div>
+            <div class="gallery-card-title">Full Home Renovation — Kitchen, Giddalur</div>
+            <div class="gallery-card-loc">Full Home Renovation · Giddalur, AP</div>
           </div>
         </div>
 
         <div class="gallery-card fade-in" role="listitem">
           <img class="gallery-card-img" src="images/home4-giddalur/outer-1.jpg"
-            alt="Home exterior view Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
+            alt="Home exterior elevation design — full home renovation Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Exterior · Giddalur</span>
-            <div class="gallery-card-title">The Giddalur Home — Outer View</div>
-            <div class="gallery-card-loc">Home 4 · Giddalur, Andhra Pradesh</div>
+            <div class="gallery-card-title">Full Home Renovation — Exterior, Giddalur</div>
+            <div class="gallery-card-loc">Full Home Renovation · Giddalur, AP</div>
           </div>
         </div>
 
         <div class="gallery-card fade-in d1" role="listitem">
           <img class="gallery-card-img" src="images/home4-giddalur/pooja-1.jpg"
-            alt="Pooja room design Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
+            alt="Traditional pooja room design — full home renovation Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
           <div class="gallery-card-info">
             <span class="gallery-card-tag">Pooja Room · Giddalur</span>
-            <div class="gallery-card-title">The Giddalur Home — Pooja Room</div>
-            <div class="gallery-card-loc">Home 4 · Giddalur, Andhra Pradesh</div>
+            <div class="gallery-card-title">Full Home Renovation — Pooja Room, Giddalur</div>
+            <div class="gallery-card-loc">Full Home Renovation · Giddalur, AP</div>
           </div>
         </div>
 
