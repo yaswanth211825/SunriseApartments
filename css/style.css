@@ -865,7 +865,8 @@ ul { list-style: none; }
   padding: 72px 56px 64px; order: 1;
 }
 @media (max-width: 1200px) { .hp-hero-text { padding: 64px 40px; } }
-@media (max-width: 900px)  { .hp-hero-text { padding: 52px 24px 48px; order: 2; } }
+@media (max-width: 900px)  { .hp-hero-text { padding: 52px 80px 48px 24px; order: 2; } }
+@media (max-width: 480px)  { .hp-hero-text { padding: 44px 80px 44px 20px; } }
 
 .hp-hero-inner { max-width: 560px; }
 
@@ -892,6 +893,8 @@ ul { list-style: none; }
 }
 
 .hp-hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+@media (max-width: 480px) { .hp-hero-actions { flex-direction: column; gap: 10px; } }
+@media (max-width: 480px) { .hp-btn-primary, .hp-btn-ghost { text-align: center; justify-content: center; } }
 
 .hp-btn-primary {
   display: inline-flex; align-items: center; gap: 8px;
