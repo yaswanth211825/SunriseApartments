@@ -2,20 +2,21 @@
 <html lang="en-IN">
 <head>
   <meta charset="UTF-8">
-  <title>Interior Design Services | Sunrise Interiors Markapur — Living Rooms, Kitchens, Bedrooms AP Telangana</title>
-  <meta name="description" content="Explore Sunrise Interiors' full range of interior design services in Andhra Pradesh — living rooms, modular kitchens, master bedrooms, pooja rooms, bathrooms. Premium craftsmanship based in Markapur.">
-  <meta name="keywords" content="interior design services Andhra Pradesh, living room design Markapur, modular kitchen AP, bedroom interior Telangana, pooja room design, bathroom interior Andhra Pradesh, Sunrise Interiors services">
+  <title>Interior Design | Sunrise Interiors Markapur — Living Rooms, Kitchens, Bedrooms AP</title>
+  <meta name="description" content="Explore premium interior design by Sunrise Interiors — living rooms, modular kitchens, bedrooms, pooja rooms and bathrooms crafted for Indian families across Andhra Pradesh.">
+  <meta name="keywords" content="interior design Andhra Pradesh, living room design Markapur, modular kitchen AP, bedroom interior Telangana, pooja room design, bathroom interior Andhra Pradesh, Sunrise Interiors">
   <link rel="canonical" href="https://www.sunriseinteriorsmarkapur.in/interiors.html">
 
-  <meta property="og:title" content="Interior Design Services | Sunrise Interiors Markapur">
-  <meta property="og:description" content="Living rooms, kitchens, bedrooms, pooja rooms & bathrooms — designed with premium craftsmanship by Sunrise Interiors, based in Markapur AP.">
+  <meta property="og:title" content="Interior Design | Sunrise Interiors Markapur">
+  <meta property="og:description" content="Living rooms, kitchens, bedrooms, pooja rooms & bathrooms — designed with premium craftsmanship by Sunrise Interiors, Markapur AP.">
   <meta property="og:image" content="https://www.sunriseinteriorsmarkapur.in/images/home3-cumbum/living-room-1.jpg">
   <meta property="og:url" content="https://www.sunriseinteriorsmarkapur.in/interiors.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="theme-color" content="#1C1C1C">
+  <meta name="theme-color" content="#ffffff">
   <meta name="geo.region" content="IN-AP">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -26,7 +27,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Interior Design Services — Sunrise Interiors",
+    "name": "Interior Design — Sunrise Interiors",
     "provider": {
       "@type": "InteriorDesigner",
       "name": "Sunrise Interiors Markapur",
@@ -38,22 +39,322 @@
     "url": "https://www.sunriseinteriorsmarkapur.in/interiors.html"
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.sunriseinteriorsmarkapur.in/"},
-      {"@type":"ListItem","position":2,"name":"Interiors","item":"https://www.sunriseinteriorsmarkapur.in/interiors.html"}
-    ]
-  }
-  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ─── PAGE THEME: BRIGHT PREMIUM ─────────────────────────── */
+    body[data-page="interiors"] {
+      background: #ffffff;
+      color: #141414;
+    }
+
+    /* Navbar override for white page */
+    body[data-page="interiors"] #navbar {
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid #E8E4DE;
+    }
+    body[data-page="interiors"] #navbar .nav-logo-text span,
+    body[data-page="interiors"] #navbar .nav-links a { color: #141414; }
+    body[data-page="interiors"] #navbar .nav-links a:hover { color: #C6A87D; }
+    body[data-page="interiors"] #navbar .btn-outline { color: #141414; border-color: rgba(20,20,20,0.3); }
+    body[data-page="interiors"] #navbar .nav-yt { color: #C6A87D !important; }
+    body[data-page="interiors"] .hamburger span { background: #141414; }
+
+    /* Mobile menu on bright page */
+    body[data-page="interiors"] .mobile-menu { background: #fff; }
+    body[data-page="interiors"] .mobile-menu a { color: #141414; border-color: #E8E4DE; }
+
+    /* ─── VARIABLES ──────────────────────────────────────────── */
+    :root {
+      --c-bg: #ffffff;
+      --c-warm: #FAF7F2;
+      --c-stone: #F2EDE7;
+      --c-text: #141414;
+      --c-body: #3D3530;
+      --c-muted: #8C847C;
+      --c-gold: #C6A87D;
+      --c-gold-d: #A8895A;
+      --c-border: #E8E4DE;
+      --gap: 3px;
+    }
+
+    /* ─── HERO ───────────────────────────────────────────────── */
+    .int-hero {
+      position: relative;
+      width: 100%;
+      height: 100svh;
+      overflow: hidden;
+    }
+    .int-hero img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+    .int-hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+    }
+    .int-hero-text {
+      position: absolute;
+      bottom: 8vh; left: 5vw;
+      color: #fff;
+    }
+    .int-hero-text .label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px; letter-spacing: 0.25em;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+      display: block; margin-bottom: 16px;
+    }
+    .int-hero-text h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 400; line-height: 1.05;
+      margin: 0; color: #fff;
+    }
+    .int-hero-text h1 em { font-style: italic; color: #D4BC99; }
+    .int-hero-scroll {
+      position: absolute; bottom: 32px; right: 5vw;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.5);
+      font-family: 'DM Mono', monospace; font-size: 9px;
+      letter-spacing: 0.2em; text-transform: uppercase;
+    }
+    .int-hero-scroll::before {
+      content: '';
+      display: block; width: 1px; height: 40px;
+      background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.4));
+    }
+
+    /* ─── STATEMENT ──────────────────────────────────────────── */
+    .int-statement {
+      background: var(--c-bg);
+      padding: 80px 5vw;
+      text-align: center;
+    }
+    .int-statement p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      font-weight: 400; font-style: italic;
+      color: var(--c-text); line-height: 1.6;
+      max-width: 720px; margin: 0 auto 28px;
+    }
+    .gold-rule {
+      width: 48px; height: 1px;
+      background: var(--c-gold);
+      margin: 0 auto;
+    }
+
+    /* ─── SECTION HEADER ─────────────────────────────────────── */
+    .int-sec-header {
+      padding: 64px 5vw 32px;
+      background: var(--c-bg);
+    }
+    .int-sec-header.centered { text-align: center; }
+    .int-sec-header .label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 0.3em;
+      color: var(--c-gold); text-transform: uppercase;
+      display: block; margin-bottom: 12px;
+    }
+    .int-sec-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4.5vw, 3.8rem);
+      font-weight: 400; color: var(--c-text);
+      margin: 0; line-height: 1.15;
+    }
+    .int-sec-header h2 em { font-style: italic; color: var(--c-gold-d); }
+
+    /* ─── IMAGE PRIMITIVES ───────────────────────────────────── */
+    .img-full {
+      width: 100%; display: block;
+      object-fit: cover;
+    }
+    .img-full.h-tall { height: 75vh; }
+    .img-full.h-mid  { height: 60vh; }
+    .img-full.h-short{ height: 45vh; }
+
+    .img-grid {
+      display: grid; gap: var(--gap);
+    }
+    .img-grid.two   { grid-template-columns: 1fr 1fr; }
+    .img-grid.three { grid-template-columns: 1fr 1fr 1fr; }
+    .img-grid.four  { grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .img-grid.asym-l { grid-template-columns: 3fr 2fr; }
+    .img-grid.asym-r { grid-template-columns: 2fr 3fr; }
+    .img-grid.hero-l { grid-template-columns: 5fr 2fr; }
+    .img-grid.editorial { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; }
+
+    .img-cell { overflow: hidden; position: relative; }
+    .img-cell img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .img-cell:hover img { transform: scale(1.04); }
+    .img-cell.portrait  { aspect-ratio: 3/4; }
+    .img-cell.landscape { aspect-ratio: 3/2; }
+    .img-cell.square    { aspect-ratio: 1/1; }
+    .img-cell.wide      { aspect-ratio: 16/9; }
+    .img-cell.tall      { aspect-ratio: 2/3; }
+
+    .img-caption {
+      display: block;
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 0.15em;
+      color: var(--c-muted); text-transform: uppercase;
+      padding: 12px 0 0;
+    }
+
+    /* ─── WARM STRIP (between sections) ─────────────────────── */
+    .warm-strip {
+      background: var(--c-warm);
+      padding: 60px 5vw;
+    }
+    .warm-strip p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      font-style: italic; color: var(--c-body);
+      max-width: 600px; line-height: 1.7; margin: 0;
+    }
+    .warm-strip.right p { margin-left: auto; text-align: right; }
+
+    /* ─── TEXT + IMAGE SPLIT ─────────────────────────────────── */
+    .int-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 70vh;
+    }
+    .int-split.text-right { }
+    .int-split-text {
+      background: var(--c-warm);
+      display: flex; flex-direction: column;
+      justify-content: center;
+      padding: 5vw 6vw;
+    }
+    .int-split-text .label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 0.25em;
+      color: var(--c-gold); text-transform: uppercase;
+      margin-bottom: 20px; display: block;
+    }
+    .int-split-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-weight: 400; color: var(--c-text);
+      margin: 0 0 20px; line-height: 1.2;
+    }
+    .int-split-text h2 em { font-style: italic; color: var(--c-gold-d); }
+    .int-split-text p {
+      font-family: 'Jost', sans-serif;
+      font-size: 15px; color: var(--c-body);
+      line-height: 1.85; margin: 0;
+    }
+    .int-split-img { overflow: hidden; }
+    .int-split-img img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 0.8s ease;
+    }
+    .int-split-img:hover img { transform: scale(1.04); }
+
+    /* ─── DETAIL STRIP ───────────────────────────────────────── */
+    .detail-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--gap);
+    }
+    .detail-item { position: relative; overflow: hidden; }
+    .detail-item img {
+      width: 100%; aspect-ratio: 1/1;
+      object-fit: cover; display: block;
+      transition: transform 0.6s ease;
+    }
+    .detail-item:hover img { transform: scale(1.06); }
+    .detail-label {
+      padding: 10px 0 0;
+      font-family: 'DM Mono', monospace;
+      font-size: 9px; letter-spacing: 0.2em;
+      color: var(--c-muted); text-transform: uppercase;
+    }
+
+    /* ─── MOSAIC ─────────────────────────────────────────────── */
+    .mosaic {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: var(--gap);
+      height: 85vh;
+    }
+    .mosaic .cell-main { grid-row: 1 / 3; }
+    .mosaic .img-cell { height: 100%; aspect-ratio: unset; }
+
+    /* ─── CTA SECTION ────────────────────────────────────────── */
+    .int-cta {
+      background: #141414;
+      padding: 100px 5vw;
+      text-align: center;
+    }
+    .int-cta .label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 0.3em;
+      color: var(--c-gold); text-transform: uppercase;
+      display: block; margin-bottom: 24px;
+    }
+    .int-cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 400; font-style: italic;
+      color: #fff; margin: 0 0 12px;
+    }
+    .int-cta p {
+      font-family: 'Jost', sans-serif;
+      font-size: 15px; color: rgba(255,255,255,0.5);
+      margin: 0 0 40px;
+    }
+    .int-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .int-cta-btns .btn { min-height: 52px; min-width: 200px; font-size: 14px; }
+
+    /* ─── FOOTER OVERRIDE ────────────────────────────────────── */
+    body[data-page="interiors"] .footer-bar { background: #141414; }
+
+    /* ─── SPACERS ────────────────────────────────────────────── */
+    .sp { background: var(--c-bg); }
+    .sp-8  { height: 8px;  }
+    .sp-24 { height: 24px; }
+    .sp-40 { height: 40px; }
+    .sp-60 { height: 60px; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .img-grid.two, .img-grid.asym-l, .img-grid.asym-r, .img-grid.hero-l { grid-template-columns: 1fr; }
+      .img-grid.three { grid-template-columns: 1fr 1fr; }
+      .img-grid.four  { grid-template-columns: 1fr 1fr; }
+      .detail-strip { grid-template-columns: 1fr 1fr; }
+      .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: auto; height: auto; }
+      .mosaic .cell-main { grid-row: auto; }
+      .mosaic .img-cell { aspect-ratio: 4/3; }
+      .int-split { grid-template-columns: 1fr; }
+      .int-split-img { min-height: 50vw; }
+      .img-full.h-tall { height: 55vw; }
+      .img-full.h-mid  { height: 50vw; }
+      .int-cta h2 { font-size: 2.2rem; }
+    }
+    @media (max-width: 600px) {
+      .img-grid.three { grid-template-columns: 1fr; }
+      .img-grid.four  { grid-template-columns: 1fr 1fr; }
+      .detail-strip { grid-template-columns: 1fr 1fr; }
+      .int-hero-text h1 { font-size: 2.6rem; }
+      .mosaic { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body data-page="interiors">
   <div id="cursor" aria-hidden="true"></div>
 
@@ -68,9 +369,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="index.html#about"  data-navpage="home">About</a></li>
-      <li><a href="interiors.html"    data-navpage="interiors">Interiors</a></li>
+      <li><a href="interiors.html"    data-navpage="interiors" class="active">Interiors</a></li>
       <li><a href="projects.html"     data-navpage="projects">Projects</a></li>
-      <li><a href="services.html"     data-navpage="services">Services</a></li>
       <li><a href="https://youtube.com/@sunriseinteriors?si=xvs2r-LiiFEDDJr4" target="_blank" rel="noopener noreferrer" class="nav-yt">▶ YouTube</a></li>
       <li><a href="contact.html"      data-navpage="contact">Contact</a></li>
     </ul>
@@ -83,339 +383,411 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
     <a href="index.html#about">About</a>
-    <a href="interiors.html">Interiors</a>
+    <a href="interiors.html" class="active">Interiors</a>
     <a href="projects.html">Projects</a>
-    <a href="services.html">Services</a>
     <a href="https://youtube.com/@sunriseinteriors?si=xvs2r-LiiFEDDJr4" target="_blank" rel="noopener noreferrer" class="m-yt">▶ YouTube</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+917013070030" class="btn btn-primary m-cta">📞 Call Now</a>
   </div>
 
-  <!-- INTERIORS HERO -->
-  <header class="interiors-hero" aria-label="Interiors showcase hero">
-    <img src="images/home3-cumbum/entry-1.jpg"
-      alt="Premium interior design by Sunrise Interiors Markapur Andhra Pradesh"
-      loading="eager" fetchpriority="high" decoding="async">
-    <div class="interiors-hero-content fade-up">
-      <span class="section-label">Interior Design · Markapur</span>
-      <h1>Every Room,<br>Designed with<br><em style="font-style:italic;color:var(--color-brass-light);">Purpose</em></h1>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- HERO                                                       -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="int-hero" aria-label="Interior design hero">
+    <img
+      src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1800&q=85"
+      alt="Luxury living room interior design — Sunrise Interiors Andhra Pradesh"
+      fetchpriority="high" loading="eager" decoding="async">
+    <div class="int-hero-overlay"></div>
+    <div class="int-hero-text fade-up">
+      <span class="label">Interior Design · Markapur · AP</span>
+      <h1>Every Space,<br>A <em>Statement.</em></h1>
     </div>
-  </header>
-
-  <!-- INTRO -->
-  <section class="interiors-intro" aria-label="Our design philosophy">
-    <div class="interiors-intro-inner">
-      <div class="interiors-intro-text fade-up">
-        <blockquote>"A home is not just built with materials — it is built with memories. We design every space to hold your family's story."</blockquote>
-        <p>At Sunrise Interiors, we believe that good design is not a luxury — it is a right. Every family in Andhra Pradesh deserves a home that reflects their values, supports their way of life, and brings them joy every single day.</p>
-        <p>From a single room to a complete 4BHK transformation, we bring the same attention to detail, the same quality of materials, and the same passion to every project — whether it's in Markapur or across the state.</p>
-        <a href="contact.html" class="btn btn-outline-dark" style="margin-top:8px;">Get in Touch</a>
-      </div>
-      <div class="interiors-intro-img fade-up d2">
-        <img src="images/home3-cumbum/entry-1.jpg"
-          alt="Beautifully crafted home entry by Sunrise Interiors Markapur"
-          loading="lazy" decoding="async"
-          style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;border-left:3px solid var(--color-brass);">
-      </div>
-    </div>
+    <div class="int-hero-scroll" aria-hidden="true">Scroll</div>
   </section>
 
-  <!-- WHAT MAKES US UNIQUE -->
-  <section class="unique-section" aria-label="What makes Sunrise Interiors unique">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-label">The Sunrise Difference</span>
-        <h2 class="section-title">Experiences You Won't<br>Find Elsewhere</h2>
-        <div class="brass-line"></div>
-      </div>
-    </div>
-    <div class="unique-grid">
-      <div class="unique-item fade-up">
-        <div class="unique-num">01</div>
-        <div class="unique-text">
-          <h3>We Come to Your Doorstep</h3>
-          <p>No need to visit a showroom. Our design team travels to your home anywhere in AP & Telangana — we measure, consult, and visualise the design right where you live.</p>
-        </div>
-      </div>
-      <div class="unique-item fade-up d1">
-        <div class="unique-num">02</div>
-        <div class="unique-text">
-          <h3>Indian Family–First Design</h3>
-          <p>We design for how Indian families actually live — joint families, festive gatherings, daily poojas, and long cooking sessions. Every design decision is rooted in your real life.</p>
-        </div>
-      </div>
-      <div class="unique-item fade-up d2">
-        <div class="unique-num">03</div>
-        <div class="unique-text">
-          <h3>Transparent Process from Day One</h3>
-          <p>We define the full scope of work in writing before anything begins. You see the design, materials, and timeline — every decision is documented and agreed before execution starts.</p>
-        </div>
-      </div>
-      <div class="unique-item fade-up d1">
-        <div class="unique-num">04</div>
-        <div class="unique-text">
-          <h3>Radha Krishna Water Fountain</h3>
-          <p>Our signature — a handcrafted Radha Krishna water fountain that transforms any living space into a sacred, serene focal point. Available exclusively through Sunrise Interiors.</p>
-        </div>
-      </div>
-      <div class="unique-item fade-up d2">
-        <div class="unique-num">05</div>
-        <div class="unique-text">
-          <h3>6-Year Track Record, 120+ Families</h3>
-          <p>Since 2018, we have completed over 120 homes across Andhra Pradesh and Telangana. Our portfolio of real projects — not renders — speaks for our quality.</p>
-        </div>
-      </div>
-      <div class="unique-item fade-up d3">
-        <div class="unique-num">06</div>
-        <div class="unique-text">
-          <h3>Dedicated Project Manager for Your Home</h3>
-          <p>From first consultation to final handover, one dedicated team member oversees every detail of your project. One point of contact. Zero confusion.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- STATEMENT                                                  -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="int-statement fade-up">
+    <p>"We don't decorate rooms — we design the way your family feels inside them."</p>
+    <div class="gold-rule"></div>
+  </div>
 
-  <!-- ROOM SHOWCASE with tabs -->
-  <section class="room-showcase" aria-label="Room-by-room design showcase">
-    <div class="section-header fade-up" style="padding:0 20px;">
-      <span class="section-label">Room by Room</span>
-      <h2 class="section-title">The Art of<br>Every Space</h2>
-      <div class="brass-line"></div>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- LIVING ROOMS                                               -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="int-sec-header fade-up" id="living-rooms">
+    <span class="label">Living Rooms</span>
+    <h2>The Heart of<br>Every <em>Home</em></h2>
+  </div>
+
+  <!-- Full bleed -->
+  <div class="fade-up">
+    <img class="img-full h-tall"
+      src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1800&q=85"
+      alt="Premium living room interior design by Sunrise Interiors"
+      loading="lazy" decoding="async">
+  </div>
+
+  <div class="sp sp-8"></div>
+
+  <!-- Asymmetric 2-col -->
+  <div class="img-grid asym-l fade-up">
+    <div class="img-cell landscape">
+      <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=1200&q=85"
+        alt="Modern open-plan living room design Andhra Pradesh"
+        loading="lazy" decoding="async">
+    </div>
+    <div class="img-cell portrait">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=85"
+        alt="Luxury sofa and cushion detail — Sunrise Interiors"
+        loading="lazy" decoding="async">
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- WARM STRIP                                                 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="warm-strip fade-up">
+    <p>"Every sofa, every light, every shelf — placed where your family will actually use it."</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MODULAR KITCHENS                                           -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section aria-label="Modular kitchen design" id="kitchens">
+    <div class="int-sec-header fade-up">
+      <span class="label">Modular Kitchens</span>
+      <h2>Built for<br><em>Indian Living</em></h2>
     </div>
 
-    <!-- Tabs -->
-    <div class="room-tabs" role="tablist" aria-label="Room categories">
-      <button class="room-tab active" data-room="living" role="tab" aria-selected="true">Living Room</button>
-      <button class="room-tab" data-room="kitchen" role="tab" aria-selected="false">Kitchen</button>
-      <button class="room-tab" data-room="bedroom" role="tab" aria-selected="false">Bedroom</button>
-      <button class="room-tab" data-room="pooja" role="tab" aria-selected="false">Pooja Room</button>
-      <button class="room-tab" data-room="bathroom" role="tab" aria-selected="false">Bathroom</button>
-    </div>
-
-    <!-- Living Room Panel -->
-    <div class="room-panel active" data-room="living" role="tabpanel">
-      <div class="room-panel-inner">
-        <div class="room-panel-gallery">
-          <img class="main-img" src="images/home3-cumbum/living-room-bright.jpg"
-            alt="Living room interior design by Sunrise Interiors Markapur" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home3-cumbum/living-room-3.jpg"
-            alt="Living room detail by Sunrise Interiors" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home4-giddalur/living-room-1.jpg"
-            alt="Living room design Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
-        </div>
-        <div class="room-panel-info fade-up">
-          <span class="section-label">Living Room</span>
-          <h3>Where Every Day Begins and Ends</h3>
-          <p>The living room is your family's stage — the space for morning chai, evening prayers, and weekend gatherings. We design it to be beautiful enough for guests and comfortable enough for you.</p>
-          <p>Custom sofas, feature walls with texture paint or wallpaper, coffered false ceilings with cove lighting, built-in TV units with integrated storage — every element is planned to the centimetre.</p>
-          <div class="room-panel-features">
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>False Ceilings with Cove &amp; Recessed Lighting</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Custom TV &amp; Entertainment Units</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Feature Accent Walls — Texture, PU or Wallpaper</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Sofa Sets &amp; Centre Table Coordination</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Marble &amp; Vitrified Tile Flooring</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Kitchen Panel -->
-    <div class="room-panel" data-room="kitchen" role="tabpanel">
-      <div class="room-panel-inner">
-        <div class="room-panel-gallery">
-          <img class="main-img" src="images/home3-cumbum/kitchen-1.jpg"
-            alt="Modular kitchen design by Sunrise Interiors Markapur" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home3-cumbum/kitchen-2.jpg"
-            alt="Kitchen design detail by Sunrise Interiors" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home3-cumbum/kitchen-loft.jpg"
-            alt="Kitchen loft storage by Sunrise Interiors" loading="lazy" decoding="async">
-        </div>
-        <div class="room-panel-info fade-up">
-          <span class="section-label">Modular Kitchen</span>
-          <h3>Engineered for Real Indian Cooking</h3>
-          <p>Indian kitchens work hard — pressure cookers, heavy masalas, and constant heat. We engineer kitchens that can handle all of it, while looking beautiful for years without degrading.</p>
-          <p>Dekton and Quartz countertops, marine ply carcasses with laminate shutters, German soft-close hinges, deep drawer systems, and chimney integration — built for daily serious cooking.</p>
-          <div class="room-panel-features">
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Dekton / Quartz / Granite Countertops</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>German Soft-Close Hinges &amp; Channels</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Pull-Out Spice Racks &amp; Drawer Organisers</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Loft Cabinets with Maximum Ceiling Height</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Chimney &amp; Hob Integration</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bedroom Panel -->
-    <div class="room-panel" data-room="bedroom" role="tabpanel">
-      <div class="room-panel-inner">
-        <div class="room-panel-gallery">
-          <img class="main-img" src="images/home3-cumbum/master-bedroom-1.jpg"
-            alt="Master bedroom interior by Sunrise Interiors Markapur" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home3-cumbum/bedroom-2.jpg"
-            alt="Bedroom design by Sunrise Interiors" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home4-giddalur/bedroom-1.jpg"
-            alt="Bedroom interior Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
-        </div>
-        <div class="room-panel-info fade-up">
-          <span class="section-label">Master Bedroom</span>
-          <h3>Your Space. Your Rules.</h3>
-          <p>Sleep better, live better. A well-designed bedroom isn't just about aesthetics — it's about how you feel when you wake up. We design spaces that restore and inspire.</p>
-          <p>Floor-to-ceiling sliding wardrobes with mirrored panels, headboard feature walls in upholstered or cane-panelled finishes, and layered lighting — a master suite that feels like a luxury retreat.</p>
-          <div class="room-panel-features">
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Floor-to-Ceiling Sliding Wardrobes</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Upholstered or Panel Headboard Walls</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Laminate &amp; Veneer Wardrobe Finishes</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Study Nook &amp; Dressing Table Integration</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Mood &amp; Task Lighting Design</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pooja Room Panel -->
-    <div class="room-panel" data-room="pooja" role="tabpanel">
-      <div class="room-panel-inner">
-        <div class="room-panel-gallery">
-          <img class="main-img" src="images/home3-cumbum/pooja-IMG_8380.jpg"
-            alt="Pooja room design by Sunrise Interiors Markapur" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home3-cumbum/water-fountain.jpg"
-            alt="Radha Krishna water fountain by Sunrise Interiors" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home4-giddalur/pooja-1.jpg"
-            alt="Pooja room design Giddalur by Sunrise Interiors" loading="lazy" decoding="async">
-        </div>
-        <div class="room-panel-info fade-up">
-          <span class="section-label">Pooja Room</span>
-          <h3>A Sacred Space, Designed with Devotion</h3>
-          <p>The pooja room is the spiritual centre of every Indian home. We approach its design with the same reverence as the rituals performed within — using hand-carved wood, natural stone, and warm lighting that invites peace.</p>
-          <p>Our signature Radha Krishna water fountain adds a unique, serene focal point — the gentle sound of flowing water creating a divine atmosphere that no other studio offers.</p>
-          <div class="room-panel-features">
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Hand-Carved Teak &amp; Sheesham Mandirs</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Signature Radha Krishna Water Fountain</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Marble &amp; Stone Idol Platforms</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Warm LED Niches &amp; Backlit Panels</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Ventilation &amp; Smoke Management Design</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bathroom Panel -->
-    <div class="room-panel" data-room="bathroom" role="tabpanel">
-      <div class="room-panel-inner">
-        <div class="room-panel-gallery">
-          <img class="main-img" src="images/home3-cumbum/bathroom-1.jpg"
-            alt="Bathroom interior design by Sunrise Interiors Markapur" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home4-giddalur/kitchen-floor2.jpg"
-            alt="Interior detail by Sunrise Interiors Giddalur" loading="lazy" decoding="async">
-          <img class="sub-img" src="images/home4-giddalur/dining-1.jpg"
-            alt="Dining area design by Sunrise Interiors" loading="lazy" decoding="async">
-        </div>
-        <div class="room-panel-info fade-up">
-          <span class="section-label">Bathroom</span>
-          <h3>Clean, Safe, Quietly Luxurious</h3>
-          <p>Bathrooms are used every single day — they deserve as much care as your living room. We specify tiles and fixtures for durability and low maintenance, without ever compromising on how they look.</p>
-          <p>Italian and vitrified anti-skid tiles, wall-hung WCs, rainfall shower systems, tempered glass partitions, fog-resistant mirrors — functional luxury designed to last decades.</p>
-          <div class="room-panel-features">
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Anti-Skid Italian &amp; Vitrified Floor Tiles</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Rainfall &amp; Hand-Shower Systems</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Concealed Cistern &amp; Wall-Hung WC</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Tempered Glass Partitions</span></div>
-            <div class="room-feature"><span class="room-feature-icon">✦</span><span>Fog-Resistant Backlit Mirrors</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BEFORE / AFTER SLIDER -->
-  <section class="before-after-section" aria-label="Before and after transformation">
-    <div class="ba-inner">
-      <div class="section-header fade-up" style="text-align:left;">
-        <span class="section-label">The Transformation</span>
-        <h2 class="section-title" style="color:var(--color-white);">Drag to See<br>the Difference</h2>
-        <p style="color:var(--color-stone);font-size:15px;margin-top:-10px;">Slide the handle left and right to compare before and after.</p>
-      </div>
-      <div class="ba-slider" aria-label="Before and after comparison slider">
-        <img class="ba-slider-img"
-          src="images/home4-giddalur/outer-1.jpg"
-          alt="Before: exterior of Giddalur home before Sunrise Interiors renovation"
+    <!-- Split: image left, text right -->
+    <div class="int-split fade-up">
+      <div class="int-split-img">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=85"
+          alt="Modern modular kitchen interior design Markapur AP"
           loading="lazy" decoding="async">
-        <div class="ba-after">
-          <img src="images/home3-cumbum/outer-IMG_8596.jpg"
-            alt="After: beautifully finished home exterior by Sunrise Interiors"
-            loading="lazy" decoding="async">
-        </div>
-        <div class="ba-handle">
-          <div class="ba-handle-circle">↔</div>
-        </div>
       </div>
-      <div class="ba-labels">
-        <span class="ba-label">← Before</span>
-        <span class="ba-label">After →</span>
+      <div class="int-split-text">
+        <span class="label">Kitchens</span>
+        <h2>Every drawer planned<br>around how you <em>cook</em></h2>
+        <p>Three meals a day. Heavy vessels. Strong spices. We design kitchens around Indian life — not generic layouts. Every cabinet, every drawer, every surface placed with purpose.</p>
       </div>
     </div>
-  </section>
 
-  <!-- MATERIALS & CRAFT -->
-  <section class="materials-section" aria-label="Materials we use">
-    <div class="materials-inner">
-      <div class="mat-grid fade-up">
-        <div class="mat-item" tabindex="0" aria-label="Teak Wood">
-          <img src="images/home3-cumbum/entry-1.jpg"
-            alt="Teak wood work by Sunrise Interiors — main door" loading="lazy" decoding="async">
-          <div class="mat-label">
-            <span class="mat-name">Teak Wood</span>
-            <span class="mat-origin">Sourced · Premium Grade</span>
-          </div>
-        </div>
-        <div class="mat-item" tabindex="0" aria-label="Italian Marble">
-          <img src="images/home3-cumbum/living-room-1.jpg"
-            alt="Italian marble flooring by Sunrise Interiors" loading="lazy" decoding="async">
-          <div class="mat-label">
-            <span class="mat-name">Marble Floors</span>
-            <span class="mat-origin">Italian &amp; Rajasthani</span>
-          </div>
-        </div>
-        <div class="mat-item" tabindex="0" aria-label="Dekton Countertops">
-          <img src="images/home3-cumbum/kitchen-loft.jpg"
-            alt="Modular kitchen with Dekton countertop by Sunrise Interiors" loading="lazy" decoding="async">
-          <div class="mat-label">
-            <span class="mat-name">Dekton Counter</span>
-            <span class="mat-origin">Heat &amp; Scratch Resistant</span>
-          </div>
-        </div>
-        <div class="mat-item" tabindex="0" aria-label="Sacred Water Fountain">
-          <img src="images/home3-cumbum/water-fountain.jpg"
-            alt="Radha Krishna water fountain by Sunrise Interiors" loading="lazy" decoding="async">
-          <div class="mat-label">
-            <span class="mat-name">Sacred Fountain</span>
-            <span class="mat-origin">Sunrise Signature</span>
-          </div>
-        </div>
-      </div>
-      <div class="mat-quote fade-up d2">
-        <blockquote>"We don't choose materials for how they look on day one — we choose them for how they'll look on day 3,650."</blockquote>
-        <span class="mat-attr">— Sunrise Interiors Design Philosophy</span>
-        <div style="margin-top:32px;display:flex;flex-direction:column;gap:14px;">
-          <a href="projects.html" class="btn btn-outline-dark">View Our Projects →</a>
-          <a href="https://wa.me/919652540850?text=Namaste!+I+saw+your+Interiors+page+and+would+like+to+discuss+my+home+project." target="_blank" rel="noopener noreferrer" class="btn btn-wa">💬 Discuss My Project</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="sp sp-8"></div>
 
-  <!-- CTA BANNER -->
-  <section class="cta-banner" aria-label="Call to action">
+    <!-- Full bleed kitchen -->
     <div class="fade-up">
-      <h2>Let's Design Your Dream Home</h2>
-      <p>We work across all of Andhra Pradesh &amp; Telangana. Contact us to discuss your project.</p>
-      <div class="cta-btns">
-        <a href="https://wa.me/919652540850" target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-lg">💬 WhatsApp Now</a>
-        <a href="contact.html" class="btn btn-outline btn-lg">Book a Consultation</a>
+      <img class="img-full h-mid"
+        src="https://images.unsplash.com/photo-1556912173-3bb406ef726f?w=1800&q=85"
+        alt="Premium modular kitchen with island — Sunrise Interiors"
+        loading="lazy" decoding="async">
+    </div>
+
+    <div class="sp sp-8"></div>
+
+    <!-- 3-col kitchen detail strip -->
+    <div class="img-grid three fade-up">
+      <div class="img-cell wide">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85"
+          alt="Kitchen appliance and countertop detail"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell wide">
+        <img src="images/projects/cumbum-house/modular-kitchen-with-island-design.webp"
+          alt="Modular kitchen with island design — Cumbum project Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell wide">
+        <img src="images/projects/ongole-house/modern-parallel-modular-kitchen-mint-green.webp"
+          alt="Modern parallel modular kitchen mint green — Ongole project"
+          loading="lazy" decoding="async">
       </div>
     </div>
   </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- BEDROOMS                                                   -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section aria-label="Bedroom interior design" id="bedrooms">
+    <div class="sp sp-60"></div>
+
+    <div class="int-sec-header centered fade-up">
+      <span class="label">Bedrooms</span>
+      <h2>Your Private <em>Sanctuary</em></h2>
+    </div>
+
+    <!-- Full bleed hero -->
+    <div class="fade-up">
+      <img class="img-full h-tall"
+        src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1800&q=85"
+        alt="Luxury bedroom interior design Andhra Pradesh — Sunrise Interiors"
+        loading="lazy" decoding="async">
+    </div>
+
+    <div class="sp sp-8"></div>
+
+    <!-- 2-col -->
+    <div class="img-grid two fade-up">
+      <div class="img-cell landscape">
+        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1000&q=85"
+          alt="Premium bed and headboard detail — luxury bedroom"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell landscape">
+        <img src="images/projects/giddalur-house/bedroom-interior-design-giddalur.webp"
+          alt="Bedroom interior design Giddalur — Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+    </div>
+
+    <div class="sp sp-8"></div>
+
+    <!-- Split: text left, image right -->
+    <div class="int-split fade-up">
+      <div class="int-split-text">
+        <span class="label">Wardrobes & Storage</span>
+        <h2>Floor-to-ceiling<br><em>precision</em></h2>
+        <p>Soft-close doors. Mirrored panels. Pull-out trays. Every centimetre of wall height used. Wardrobes built to factory tolerances — not by hand guesswork.</p>
+      </div>
+      <div class="int-split-img">
+        <img src="images/projects/ongole-house/luxury-blue-sliding-wardrobe-with-gold-accents.webp"
+          alt="Luxury blue sliding wardrobe with gold accents — Ongole project"
+          loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- WARM STRIP RIGHT                                           -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="warm-strip right fade-up">
+    <p>"Sleep is design. A room that restores you is the most important room in your home."</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- BATHROOMS                                                  -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section aria-label="Bathroom interior design" id="bathrooms">
+    <div class="int-sec-header fade-up">
+      <span class="label">Bathrooms</span>
+      <h2>Luxury in<br>Every <em>Detail</em></h2>
+    </div>
+
+    <!-- Mosaic layout -->
+    <div class="mosaic fade-up">
+      <div class="img-cell cell-main">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=85"
+          alt="Luxury marble bathroom with freestanding bathtub — Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell">
+        <img src="images/projects/cumbum-house/marble-bathroom-interior-with-bathtub.webp"
+          alt="Marble bathroom interior with bathtub — Cumbum project"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell">
+        <img src="https://images.unsplash.com/photo-1620626011761-996317702b4c?w=800&q=85"
+          alt="Premium bathroom vanity and fixtures detail"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell">
+        <img src="images/projects/giddalur-house/bathroom-interior-design-giddalur.webp"
+          alt="Bathroom interior design Giddalur — Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=85"
+          alt="Anti-skid bathroom tiles detail — premium bathroom design"
+          loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SACRED SPACES — POOJA ROOMS                                -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section aria-label="Pooja room design" id="pooja-rooms">
+    <div class="sp sp-60"></div>
+
+    <!-- Split: image left, text right -->
+    <div class="int-split fade-up">
+      <div class="int-split-img">
+        <img src="images/projects/cumbum-house/modern-pooja-room-ganesha-backlight.webp"
+          alt="Modern pooja room with Ganesha backlit design — Cumbum project Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="int-split-text">
+        <span class="label">Sacred Spaces</span>
+        <h2>Crafted with<br><em>Devotion</em></h2>
+        <p>The pooja room is the most personal space in any Indian home. Carved wood mandirs, marble platforms, backlit niches, and brass accents — designed as a standalone sanctuary, not an afterthought alcove.</p>
+      </div>
+    </div>
+
+    <div class="sp sp-8"></div>
+
+    <!-- 2-col pooja detail -->
+    <div class="img-grid two fade-up">
+      <div class="img-cell landscape">
+        <img src="images/projects/giddalur-house/pooja-room-interior-ground-floor.webp"
+          alt="Traditional pooja room interior ground floor — Giddalur project"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell landscape">
+        <img src="images/projects/cumbum-house/backlit-wall-art-radha-krishna.webp"
+          alt="Backlit Radha Krishna wall art — Cumbum project Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FEATURE WALLS & CEILINGS                                   -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section aria-label="Feature walls and false ceilings">
+    <div class="sp sp-60"></div>
+    <div class="int-sec-header centered fade-up">
+      <span class="label">Ceilings & Feature Walls</span>
+      <h2>The Details That<br>Define a <em>Room</em></h2>
+    </div>
+
+    <!-- Full bleed -->
+    <div class="fade-up">
+      <img class="img-full h-mid"
+        src="images/projects/cumbum-house/rooftop-lounge-wooden-false-ceiling-design.webp"
+        alt="Rooftop lounge with wooden false ceiling design — Cumbum project"
+        loading="lazy" decoding="async">
+    </div>
+
+    <div class="sp sp-8"></div>
+
+    <!-- 3-col details -->
+    <div class="img-grid three fade-up">
+      <div class="img-cell landscape">
+        <img src="images/projects/ongole-house/vox-infratop-wooden-finish-ceiling-design.webp"
+          alt="VOX Infratop wooden finish ceiling design — Ongole project"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell landscape">
+        <img src="images/projects/ongole-house/magnetic-recessed-track-lighting-ceiling-fan.webp"
+          alt="Magnetic recessed track lighting with ceiling fan — Ongole project"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell landscape">
+        <img src="images/projects/cumbum-house/modern-tv-unit-green-fluted-panel-sunrise-interiors.webp"
+          alt="Modern TV unit with green fluted panel feature wall — Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MAIN DOORS & ENTRIES                                       -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section aria-label="Main doors and entry design">
+    <div class="sp sp-60"></div>
+
+    <div class="int-split fade-up">
+      <div class="int-split-text">
+        <span class="label">Entries & Main Doors</span>
+        <h2>The First<br><em>Impression</em></h2>
+        <p>Your entrance is the first thing guests experience. Carved wooden main doors, backlit niches, CNC jali panels, and statement foyers — designed to make every arrival feel intentional.</p>
+      </div>
+      <div class="int-split-img">
+        <img src="images/projects/cumbum-house/carved-wooden-main-door-design.webp"
+          alt="Carved wooden main door design — Cumbum project Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+    </div>
+
+    <div class="sp sp-8"></div>
+
+    <div class="img-grid two fade-up">
+      <div class="img-cell landscape">
+        <img src="images/projects/ongole-house/modern-teak-veneer-main-door-design.webp"
+          alt="Modern teak veneer main door design — Ongole project"
+          loading="lazy" decoding="async">
+      </div>
+      <div class="img-cell landscape">
+        <img src="images/projects/giddalur-house/entry-foyer-interior-design-giddalur.webp"
+          alt="Entry foyer interior design Giddalur — Sunrise Interiors"
+          loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MATERIALS DETAIL STRIP                                     -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section aria-label="Materials we use">
+    <div class="sp sp-60"></div>
+    <div class="int-sec-header centered fade-up">
+      <span class="label">Our Materials</span>
+      <h2>Only What We'd<br>Put in <em>Our Own Home</em></h2>
+    </div>
+
+    <div class="detail-strip fade-up">
+      <div class="detail-item">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=85"
+          alt="Italian Carrara marble — premium material Sunrise Interiors"
+          loading="lazy" decoding="async">
+        <div class="detail-label">Italian Marble<br>Carrara · Italy</div>
+      </div>
+      <div class="detail-item">
+        <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=700&q=85"
+          alt="Premium teak wood — Sunrise Interiors material"
+          loading="lazy" decoding="async">
+        <div class="detail-label">Teak Wood<br>Kerala · India</div>
+      </div>
+      <div class="detail-item">
+        <img src="https://images.unsplash.com/photo-1585128903994-9788298ef072?w=700&q=85"
+          alt="German Hettich hardware fittings — Sunrise Interiors"
+          loading="lazy" decoding="async">
+        <div class="detail-label">German Hardware<br>Hettich · Blum</div>
+      </div>
+      <div class="detail-item">
+        <img src="images/projects/ongole-house/aluminium-profile-i-handle-reeded-glass-cabinet.webp"
+          alt="Aluminium profile handle with reeded glass cabinet — Sunrise Interiors"
+          loading="lazy" decoding="async">
+        <div class="detail-label">Premium Glass<br>Reeded · Frosted</div>
+      </div>
+    </div>
+
+    <div class="sp sp-60"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- PROJECT GLIMPSE — FULL BLEED                               -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="fade-up">
+    <img class="img-full h-tall"
+      src="images/projects/giddalur-house/full-home-interior-giddalur-living-room-ground-floor.webp"
+      alt="Full home interior — Giddalur living room ground floor — Sunrise Interiors"
+      loading="lazy" decoding="async" style="object-position: center 40%;">
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- CTA                                                        -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="int-cta fade-up">
+    <span class="label">Start Your Project</span>
+    <h2>"Let's design your home."</h2>
+    <p>We come to you — anywhere in Andhra Pradesh &amp; Telangana.</p>
+    <div class="int-cta-btns">
+      <a href="https://wa.me/919652540850?text=Hi%2C%20I%20saw%20the%20interiors%20page%20and%20I%27d%20like%20to%20discuss%20a%20project."
+        target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-lg">
+        💬 WhatsApp Us
+      </a>
+      <a href="tel:+917013070030" class="btn btn-call btn-lg">
+        📞 70130 70030
+      </a>
+      <a href="contact.html" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,0.3);">
+        Book a Consultation
+      </a>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer-bar">
@@ -427,7 +799,6 @@
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="interiors.html">Interiors</a>
         <a href="projects.html">Projects</a>
-        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
