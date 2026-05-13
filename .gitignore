@@ -17,3 +17,10 @@
 
 # Temp / OS
 Thumbs.db
+
+# Next.js
+.next/
+out/
+node_modules/
+.env*.local
+.vercel
