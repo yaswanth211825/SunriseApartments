@@ -32,20 +32,26 @@
     /* Quick-contact chips at top */
     .quick-contact {
       background: var(--color-linen);
-      padding: 28px 20px;
+      padding: 24px 20px;
       border-bottom: 1px solid rgba(28,28,28,0.06);
     }
     .quick-contact-inner {
       max-width: var(--max-width);
       margin: 0 auto;
       display: flex;
-      gap: 14px;
+      gap: 10px;
       flex-wrap: wrap;
       justify-content: center;
     }
+    /* On mobile: stack chips full-width, right padding keeps clear of float buttons */
+    @media (max-width: 599px) {
+      .quick-contact { padding-right: 76px; }
+      .quick-contact-inner { flex-direction: column; align-items: stretch; }
+      .qc-chip { justify-content: center; }
+    }
     .qc-chip {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 18px; min-height: 42px;
+      padding: 10px 16px; min-height: 42px;
       border-radius: 3px; font-family: var(--font-sans);
       font-size: 13px; font-weight: 400;
       text-decoration: none; transition: all 0.2s;

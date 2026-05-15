@@ -1488,7 +1488,8 @@ ul { list-style: none; }
 /* =============================================
    CONTACT PAGE — LAYOUT
 ============================================= */
-.contact-section { background: var(--ink); padding: 80px 24px; overflow-x: hidden; }
+.contact-section { background: var(--ink); padding: 80px 24px 80px 24px; overflow-x: hidden; }
+@media (max-width: 767px)  { .contact-section { padding-right: 76px; } }
 @media (min-width: 768px)  { .contact-section { padding: 100px 48px; } }
 @media (min-width: 1024px) { .contact-section { padding: 120px 64px; } }
 
