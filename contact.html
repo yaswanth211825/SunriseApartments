@@ -45,9 +45,9 @@
     }
     .qc-chip {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 20px; min-height: 50px;
-      border-radius: 50px; font-family: var(--font-sans);
-      font-size: 14px; font-weight: 400;
+      padding: 10px 18px; min-height: 42px;
+      border-radius: 3px; font-family: var(--font-sans);
+      font-size: 13px; font-weight: 400;
       text-decoration: none; transition: all 0.2s;
       border: 1.5px solid transparent;
     }
@@ -270,11 +270,11 @@
         </p>
 
         <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
-          <input type="text"  class="f-input" placeholder="Your Full Name"          autocomplete="name"         required aria-label="Your full name">
-          <input type="tel"   class="f-input" placeholder="WhatsApp / Phone Number" autocomplete="tel"          required aria-label="Your phone number">
-          <input type="email" class="f-input" placeholder="Email (optional)"        autocomplete="email"                 aria-label="Email address">
-          <input type="text"  class="f-input" placeholder="Your Town / Area (e.g. Ongole, Darsi)" autocomplete="address-level2" aria-label="Your area">
-          <select class="f-input" aria-label="What do you need?">
+          <input type="text"  class="f-input" name="name"    placeholder="Your Full Name"          autocomplete="name"         required aria-label="Your full name">
+          <input type="tel"   class="f-input" name="phone"   placeholder="WhatsApp / Phone Number" autocomplete="tel"          required aria-label="Your phone number">
+          <input type="email" class="f-input" name="email"   placeholder="Email (optional)"        autocomplete="email"                 aria-label="Email address">
+          <input type="text"  class="f-input" name="area"    placeholder="Your Town / Area (e.g. Ongole, Darsi)" autocomplete="address-level2" aria-label="Your area">
+          <select class="f-input" name="room" aria-label="What do you need?">
             <option value="" disabled selected>What are you looking for?</option>
             <option>Living Room Design</option>
             <option>Bedroom Interior</option>
@@ -292,7 +292,7 @@
             <option>₹30 Lakhs +</option>
             <option>Not sure yet</option>
           </select>
-          <textarea class="f-input" rows="4" placeholder="Tell us about your home — how many rooms, any specific ideas or concerns..." aria-label="Your message"></textarea>
+          <textarea class="f-input" name="message" rows="4" placeholder="Tell us about your home — how many rooms, any specific ideas or concerns..." aria-label="Your message"></textarea>
           <button type="submit" class="btn btn-primary btn-full" style="min-height:56px;font-size:15px;">
             Send Request — We'll Call You Back →
           </button>

@@ -1199,3 +1199,403 @@ ul { list-style: none; }
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* =============================================
+   BUTTON ADDITIONS
+============================================= */
+.btn-full { width: 100%; justify-content: center; white-space: normal; text-align: center; }
+.btn-yt { background: #FF0000; color: #fff; border-color: #FF0000; }
+.btn-yt:hover { background: #cc0000; transform: translateY(-1px); }
+
+/* =============================================
+   ROOM SHOWCASE WRAPPER (interiors.html)
+============================================= */
+.room-showcase { background: var(--white); padding-top: 80px; }
+@media (min-width: 768px) { .room-showcase { padding-top: 100px; } }
+.room-showcase > .section-header { padding: 0 24px; }
+@media (min-width: 768px)  { .room-showcase > .section-header { padding: 0 48px; } }
+@media (min-width: 1024px) { .room-showcase > .section-header { padding: 0 64px; } }
+
+/* room-feature (used inside room-panel-info) */
+.room-panel-features { flex-direction: column; gap: 10px; }
+.room-feature {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 14px; color: var(--ink-mid); line-height: 1.5;
+}
+.room-feature-icon { color: var(--gold); font-size: 12px; flex-shrink: 0; margin-top: 2px; }
+
+/* =============================================
+   SERVICES PAGE — PROCESS SECTION
+============================================= */
+.process-section { background: var(--cream); padding: 80px 24px; }
+@media (min-width: 768px)  { .process-section { padding: 100px 48px; } }
+@media (min-width: 1024px) { .process-section { padding: 120px 64px; } }
+
+.process-grid {
+  max-width: var(--max-width); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr;
+  gap: 32px;
+}
+@media (min-width: 600px)  { .process-grid { grid-template-columns: 1fr 1fr; gap: 28px; } }
+@media (min-width: 1024px) { .process-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; } }
+
+.process-step {
+  background: var(--white);
+  padding: 36px 28px 32px;
+  border-top: 3px solid var(--gold);
+  box-shadow: var(--shadow-float);
+  position: relative;
+}
+
+.process-num {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.25em;
+  color: var(--gold); display: block; margin-bottom: 16px;
+}
+.process-icon { font-size: 32px; display: block; margin-bottom: 14px; }
+.process-title {
+  font-family: var(--font-serif); font-size: 18px; font-weight: 700;
+  color: var(--ink); margin-bottom: 12px; line-height: 1.3;
+}
+.process-desc { font-size: 14px; color: var(--ink-mid); line-height: 1.8; }
+
+/* =============================================
+   SERVICES PAGE — WHY CHOOSE US
+============================================= */
+.why-section { background: var(--white); padding: 80px 24px; }
+@media (min-width: 768px)  { .why-section { padding: 100px 48px; } }
+@media (min-width: 1024px) { .why-section { padding: 120px 64px; } }
+
+.why-grid {
+  max-width: var(--max-width); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 600px)  { .why-grid { grid-template-columns: 1fr 1fr; gap: 20px; } }
+@media (min-width: 1024px) { .why-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+
+.why-card {
+  padding: 32px 28px;
+  border: 1px solid rgba(26,23,20,0.08);
+  border-radius: 2px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.why-card:hover { box-shadow: var(--shadow-lift); border-color: rgba(184,131,74,0.30); }
+.why-icon { font-size: 30px; display: block; margin-bottom: 14px; }
+.why-title {
+  font-family: var(--font-serif); font-size: 18px; font-weight: 700;
+  color: var(--ink); margin-bottom: 10px; line-height: 1.3;
+}
+.why-desc { font-size: 14px; color: var(--ink-mid); line-height: 1.8; }
+
+/* =============================================
+   MATERIALS SECTION — INNER LAYOUT
+   (services.html & interiors.html)
+============================================= */
+.materials-inner {
+  max-width: var(--max-width); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr;
+  gap: 48px;
+  padding: 0 24px;
+}
+@media (min-width: 768px)  { .materials-inner { padding: 0 48px; } }
+@media (min-width: 1024px) { .materials-inner { grid-template-columns: 1fr 1fr; gap: 72px; padding: 0 64px; align-items: start; } }
+
+.mat-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (min-width: 600px)  { .mat-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .mat-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* override existing .mat-item for overlay-label layout */
+.materials-inner .mat-item {
+  text-align: left;
+  position: relative; overflow: hidden;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.materials-inner .mat-item img {
+  width: 100%; height: 100%; object-fit: cover;
+  display: block; transition: transform 0.5s;
+  border-radius: 2px;
+}
+.materials-inner .mat-item:hover img { transform: scale(1.06); }
+.mat-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(26,23,20,0.85) 0%, transparent 100%);
+  padding: 24px 14px 12px;
+  display: flex; flex-direction: column; gap: 2px;
+  border-radius: 0 0 2px 2px;
+}
+.mat-label .mat-name { color: var(--white); font-size: 13px; margin-bottom: 0; }
+.mat-origin { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; color: var(--gold-light); }
+.mat-quote {
+  display: flex; flex-direction: column; justify-content: center;
+}
+.mat-quote blockquote {
+  font-family: var(--font-serif); font-size: 22px; font-style: italic;
+  color: var(--white); line-height: 1.55; margin-bottom: 16px;
+}
+@media (min-width: 768px) { .mat-quote blockquote { font-size: 26px; } }
+.mat-attr { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.20em; color: var(--gold); }
+
+/* =============================================
+   INTERIORS PAGE — HERO
+============================================= */
+.interiors-hero {
+  position: relative; width: 100%; height: 92vh; min-height: 520px;
+  overflow: hidden; background: var(--ink);
+}
+.interiors-hero img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  opacity: 0.65;
+}
+.interiors-hero-content {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  height: 100%; padding: 0 24px 64px;
+}
+@media (min-width: 768px)  { .interiors-hero-content { padding: 0 48px 80px; } }
+@media (min-width: 1024px) { .interiors-hero-content { padding: 0 64px 96px; } }
+.interiors-hero-content .section-label { color: rgba(255,255,255,0.7); }
+.interiors-hero-content h1 {
+  font-family: var(--font-serif); font-size: 52px; font-weight: 700;
+  color: var(--white); line-height: 1.1; max-width: 580px;
+}
+@media (min-width: 768px)  { .interiors-hero-content h1 { font-size: 72px; } }
+@media (min-width: 1024px) { .interiors-hero-content h1 { font-size: 88px; } }
+@media (max-width: 480px)  { .interiors-hero-content h1 { font-size: 40px; } }
+
+/* =============================================
+   INTERIORS PAGE — INTRO
+============================================= */
+.interiors-intro { background: var(--cream); padding: 80px 24px; }
+@media (min-width: 768px)  { .interiors-intro { padding: 100px 48px; } }
+@media (min-width: 1024px) { .interiors-intro { padding: 120px 64px; } }
+
+.interiors-intro-inner {
+  max-width: var(--max-width); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr;
+  gap: 48px;
+}
+@media (min-width: 1024px) { .interiors-intro-inner { grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; } }
+
+.interiors-intro-text blockquote {
+  font-family: var(--font-serif); font-size: 20px; font-style: italic;
+  color: var(--ink); line-height: 1.6; margin-bottom: 24px;
+  padding-left: 20px; border-left: 3px solid var(--gold);
+}
+@media (min-width: 768px) { .interiors-intro-text blockquote { font-size: 24px; } }
+.interiors-intro-text p {
+  font-size: 15px; color: var(--ink-mid); line-height: 1.85; margin-bottom: 16px;
+}
+
+/* =============================================
+   INTERIORS PAGE — UNIQUE SECTION
+============================================= */
+.unique-section { background: var(--white); padding: 80px 0; }
+@media (min-width: 768px)  { .unique-section { padding: 100px 0; } }
+@media (min-width: 1024px) { .unique-section { padding: 120px 0; } }
+
+.unique-grid {
+  max-width: var(--max-width); margin: 48px auto 0;
+  padding: 0 24px;
+  display: grid; grid-template-columns: 1fr;
+  gap: 0;
+}
+@media (min-width: 768px)  { .unique-grid { padding: 0 48px; grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1024px) { .unique-grid { padding: 0 64px; grid-template-columns: 1fr 1fr 1fr; } }
+
+.unique-item {
+  display: flex; gap: 20px; align-items: flex-start;
+  padding: 28px 24px;
+  border-bottom: 1px solid rgba(26,23,20,0.07);
+}
+@media (min-width: 768px) {
+  .unique-item { border-right: 1px solid rgba(26,23,20,0.07); }
+  .unique-item:nth-child(2n) { border-right: none; }
+}
+@media (min-width: 1024px) {
+  .unique-item:nth-child(2n) { border-right: 1px solid rgba(26,23,20,0.07); }
+  .unique-item:nth-child(3n) { border-right: none; }
+}
+
+.unique-num {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.20em;
+  color: var(--gold); flex-shrink: 0; padding-top: 4px;
+}
+.unique-text h3 {
+  font-family: var(--font-serif); font-size: 17px; font-weight: 700;
+  color: var(--ink); margin-bottom: 8px; line-height: 1.3;
+}
+.unique-text p { font-size: 14px; color: var(--ink-mid); line-height: 1.75; }
+
+/* =============================================
+   INTERIORS PAGE — BEFORE / AFTER SLIDER
+============================================= */
+.before-after-section { background: var(--ink); padding: 80px 24px; }
+@media (min-width: 768px)  { .before-after-section { padding: 100px 48px; } }
+@media (min-width: 1024px) { .before-after-section { padding: 120px 64px; } }
+
+.ba-inner {
+  max-width: var(--max-width); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr;
+  gap: 48px;
+}
+@media (min-width: 1024px) { .ba-inner { grid-template-columns: 1fr 2fr; gap: 64px; align-items: center; } }
+
+.before-after-section .section-header { text-align: left; }
+.before-after-section .section-title { color: var(--white); }
+.before-after-section .brass-line { margin: 0; }
+
+.ba-slider {
+  position: relative; overflow: hidden; border-radius: 2px;
+  cursor: ew-resize; user-select: none;
+  aspect-ratio: 4/3;
+  background: var(--ink);
+}
+.ba-slider-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ba-after {
+  position: absolute; inset: 0; overflow: hidden;
+  width: 50%;
+  border-right: 2px solid var(--gold);
+}
+.ba-after img { width: 100vw; max-width: var(--max-width); height: 100%; object-fit: cover; object-position: left; }
+.ba-handle {
+  position: absolute; top: 50%; right: -1px;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.ba-handle-circle {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--gold); color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  transform: translateX(50%);
+}
+.ba-labels {
+  display: flex; justify-content: space-between;
+  margin-top: 10px;
+}
+.ba-label {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.20em;
+  text-transform: uppercase; color: rgba(255,255,255,0.4);
+}
+
+/* =============================================
+   CONTACT PAGE — LAYOUT
+============================================= */
+.contact-section { background: var(--ink); padding: 80px 24px; overflow-x: hidden; }
+@media (min-width: 768px)  { .contact-section { padding: 100px 48px; } }
+@media (min-width: 1024px) { .contact-section { padding: 120px 64px; } }
+
+.contact-grid {
+  max-width: var(--max-width); margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr;
+  gap: 48px;
+}
+@media (min-width: 1024px) { .contact-grid { grid-template-columns: 45fr 55fr; gap: 64px; align-items: start; } }
+
+.c-logo {
+  font-family: var(--font-serif); font-size: 26px; font-weight: 700;
+  color: var(--white); margin-bottom: 4px;
+}
+.c-logo-sub {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+}
+.c-tagline { font-size: 14px; color: var(--color-stone); margin-bottom: 24px; font-style: italic; }
+.c-ctas {
+  display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;
+  width: 100%;
+}
+.c-ctas .btn {
+  width: 100%; justify-content: center;
+  white-space: normal; text-align: center;
+}
+.c-email {
+  font-family: var(--font-mono); font-size: 12px; color: var(--gold);
+  text-decoration: underline; display: block; margin-bottom: 24px;
+  word-break: break-all;
+}
+.c-email:hover { color: var(--gold-light); }
+
+/* =============================================
+   CONTACT PAGE — FORM
+============================================= */
+.contact-form { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+
+.f-input {
+  width: 100%; max-width: 100%; padding: 13px 14px; border-radius: 2px;
+  border: 1px solid rgba(201,169,110,0.20);
+  background: rgba(255,255,255,0.05);
+  color: var(--white); font-family: var(--font-sans);
+  font-size: 14px; font-weight: 300;
+  outline: none; transition: border-color 0.25s, background 0.25s;
+  -webkit-appearance: none; appearance: none;
+  box-sizing: border-box;
+}
+.f-input::placeholder { color: rgba(253,252,250,0.35); }
+.f-input:focus { border-color: var(--gold); background: rgba(255,255,255,0.08); }
+.f-input option { background: var(--ink); color: var(--white); }
+
+.f-success {
+  display: none; padding: 16px 18px; border-radius: 2px;
+  background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.3);
+  color: #25D366; font-size: 14px; text-align: center;
+}
+.f-success.visible { display: block; }
+
+/* =============================================
+   CONTACT PAGE — MAP
+============================================= */
+.map-section { background: var(--ink); }
+.map-section iframe {
+  width: 100%; height: 400px; border: 0; display: block;
+  filter: grayscale(30%) contrast(1.05);
+}
+@media (min-width: 1024px) { .map-section iframe { height: 520px; } }
+
+/* =============================================
+   CONTACT PAGE — FAQ
+============================================= */
+.faq-section { background: var(--cream); padding: 80px 24px; }
+@media (min-width: 768px)  { .faq-section { padding: 100px 48px; } }
+@media (min-width: 1024px) { .faq-section { padding: 120px 64px; } }
+
+.faq-list {
+  max-width: 820px; margin: 0 auto;
+  display: flex; flex-direction: column;
+}
+.faq-item { border-bottom: 1px solid rgba(26,23,20,0.10); }
+.faq-item:first-child { border-top: 1px solid rgba(26,23,20,0.10); }
+
+.faq-q {
+  width: 100%; text-align: left; background: none; border: none;
+  padding: 20px 0; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  font-family: var(--font-sans); font-size: 15px; font-weight: 400;
+  color: var(--ink); line-height: 1.5;
+  transition: color 0.2s;
+}
+.faq-q:hover { color: var(--gold); }
+.faq-icon {
+  font-size: 20px; color: var(--gold); flex-shrink: 0;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+
+.faq-a {
+  overflow: hidden; max-height: 0;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  font-size: 14px; color: var(--ink-mid); line-height: 1.85;
+  padding: 0;
+}
+.faq-item.open .faq-a {
+  max-height: 300px;
+  padding-bottom: 20px;
+}
